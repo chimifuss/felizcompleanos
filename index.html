@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chimifuss.com</title>
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .login-input {
+      width: 230px;
+      height: 30px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    
+    .login-button {
+      width: 100px;
+      height: 30px;
+      background-color: #2196F3;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+    .header-gif {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-gif img {
+      max-width: 300px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header-gif">
+      <img src="gifchimi-1.gif" alt="Before Header GIF">
+    </div>
+    <h1> Una Oda A Mi Hermosa Chimifuss <br>
+         (An Ode To My Beautiful Chimifuss) </h1>
+    <div class="header-gif">
+      <img src="gifchimi-1.gif" alt="After Header GIF">
+    </div>
+    <br>
+    <form class="login-form" onsubmit="login(event)">
+      <input type="password" class="login-input" placeholder="Ingrese su cumpleaños en DDMMAA" id="passcode-input" required>
+      <button type="submit" class="login-button">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login(event) {
+      event.preventDefault();
+      const passcode = document.getElementById("passcode-input").value;
+      if (passcode === "200688") {
+        window.location.href = "./home"; // Redirect to the home page after successful login
+      } else {
+        alert("Codigo de acceso no valido. Intentalo de nuevo.");
+      }
+    }
+  </script>
+</body>
+</html>

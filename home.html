@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chimifuss.com</title>
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .panel {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .panel img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .poem {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center
+    }
+
+    @media only screen and (min-width: 600px) {
+      .container {
+        max-width: 600px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel">
+      <img src="fc-5.gif" alt="Image 1">
+      <img src="fc-1.gif" alt="Image 2">
+    </div>
+    <div class="panel">
+      <h2 class="header"> &#127874;&#127874;&#127874;</h2>
+      <h2 class="header"> ¡Feliz cumpleaños a ti, mi más dulce Chimifuss!</h2>
+      <h2 class="header"> &#127874;&#127874;&#127874;</h2>
+      <div class="poem">
+        <video width="100%" height="auto" autoplay controls>
+          <source src="Cancion.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="panel">
+      <img src="fc-4.jpg" alt="Image 3">
+      <img src="fc-2.gif" alt="Image 4">
+    </div>
+  </div>
+</body>
+</html>
